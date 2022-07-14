@@ -25,6 +25,15 @@
 					</li>
 					<li class="header-nav__item">
 						<a href="#" class="header-nav__link">Продукция</a>
+
+						<ul class="header-nav__menu">
+							<li class="header-nav__menu-item"><a href="#">Яйцо</a></li>
+							<li class="header-nav__menu-item"><a href="#">Мясо</a></li>
+							<li class="header-nav__menu-item"><a href="#">Рапс</a></li>
+							<li class="header-nav__menu-item"><a href="#">Кукуруза</a></li>
+							<li class="header-nav__menu-item"><a href="#">Зерно</a></li>
+							<li class="header-nav__menu-item"><a href="#">Масла</a></li>
+						</ul>
 					</li>
 					<li class="header-nav__item">
 						<a href="#" class="header-nav__link">Новости</a>
@@ -49,12 +58,63 @@
 					<div class="header-widget__language-text">RU</div>
 				</div>
 			</div>
+			<div class="header__burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 		</div>
 	</div>
+
+	<nav class="header-burger__nav">
+		<ul class="header-burger-nav__list">
+			<li class="header-burger-nav__item">
+				<a href="#" class="header-burger-nav__link">О компании</a>
+
+				<ul class="header-burger-nav__menu">
+					<li class="header-burger-nav__menu-item"><a href="#">Доска почёта</a></li>
+					<li class="header-burger-nav__menu-item"><a href="#">Организация работы с молодёжью</a></li>
+					<li class="header-burger-nav__menu-item"><a href="#">Единый день информирования</a></li>
+					<li class="header-burger-nav__menu-item"><a href="#">Общественные организации</a></li>
+				</ul>
+			</li>
+			<li class="header-burger-nav__item">
+				<a href="#" class="header-burger-nav__link">Продукция</a>
+
+				<ul class="header-burger-nav__menu">
+					<li class="header-burger-nav__menu-item"><a href="#">Яйцо</a></li>
+					<li class="header-burger-nav__menu-item"><a href="#">Мясо</a></li>
+					<li class="header-burger-nav__menu-item"><a href="#">Рапс</a></li>
+					<li class="header-burger-nav__menu-item"><a href="#">Кукуруза</a></li>
+					<li class="header-burger-nav__menu-item"><a href="#">Зерно</a></li>
+					<li class="header-burger-nav__menu-item"><a href="#">Масла</a></li>
+				</ul>
+			</li>
+			<li class="header-burger-nav__item">
+				<a href="#" class="header-burger-nav__link">Новости</a>
+			</li>
+			<li class="header-burger-nav__item">
+				<a href="#" class="header-burger-nav__link">Вакансии</a>
+			</li>
+			<li class="header-burger-nav__item">
+				<a href="#" class="header-burger-nav__link">Аренда</a>
+			</li>
+			<li class="header-burger-nav__item">
+				<a href="#" class="header-burger-nav__link">Контакты</a>
+			</li>
+		</ul>
+	</nav>
 </header>
 
 <div class="intro">
-	<img src="@img/intro/intro-bg.jpg" alt="Яйца" class="intro__img">
+	<!-- <img src="@img/intro/intro-bg.jpg" alt="Яйца" class="intro__img"> -->
+
+	<picture>
+		<source srcset="img/intro/intro-bg-small.jpg" media="(max-width: 420px)">
+		<source srcset="@img/intro/intro-bg.jpg">
+		<img srcset="@img/intro/intro-bg.jpg" alt="Яйца" class="intro__img">
+	</picture>
+
 	<div class="container">
 		<div class="intro__inner">
 			<h1 class="intro__title">КПСУП «Гродненская птицефабрика»</h1>
