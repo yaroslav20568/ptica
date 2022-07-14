@@ -69,6 +69,14 @@
 			margin-bottom: 20px;
 		}
 	}
+
+	.section {
+		padding: 90px 0;
+	}
+
+	.info {
+		padding: 60px 0 42px;
+	}
 }
 
 @media(max-width: 768px) {
@@ -80,6 +88,18 @@
 		
 		&__subtitle {
 			font-size: 18px;
+		}
+	}
+	
+	.info {
+		&-item {
+			&__title {
+				font-size: 30px;
+			}
+
+			&__subtitle {
+				max-width: none;
+			}
 		}
 	}
 }
@@ -111,6 +131,27 @@
 
 		&__img {
 				
+		}
+	}
+
+	.info {
+		&__items {
+			display: block;
+		}
+
+		&__item {
+			width: 100%;
+			margin-bottom: 60px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		&-item {
+			&__title {
+				font-size: 48px;
+			}
 		}
 	}
 }
