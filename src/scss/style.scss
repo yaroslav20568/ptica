@@ -521,6 +521,75 @@ body {
 		}
 	}
 }
-/* info */
+/* INFO */
+
+/* NEWS */
+.news {
+	&__content {
+	}
+
+	&__items {
+		display: flex;
+		margin: 0 -10px;
+	}
+
+	&__item {
+		width: 50%;
+		padding: 10px;
+	}
+
+	&-item {
+		&__wrapper {
+			height: 100%;
+			background: #F2F2F2;
+			box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.08);
+			padding: 50px 40px;
+		}
+
+		&__title {
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 1.208;
+			color: $green;
+			margin-bottom: 44px;
+		}
+	
+		&__text {
+			font-size: 18px;
+			line-height: 130%;
+			color: $black;
+			margin-bottom: 26px;
+		}
+	
+		&__date {
+			font-size: 18px;
+			line-height: 130%;
+			color: #898989;
+		}
+	}
+
+	&__wrapper-btn {
+		text-align: right;
+		margin-top: 50px;
+	}
+
+	&__btn {
+		display: inline-block;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 1.25;
+		color: $green;
+		border: 2px solid $green;
+		border-radius: 20px;
+		padding: 13px 31.5px;
+		transition: .3s linear background-color, .3s linear color;
+
+		&:hover {
+			background-color: $green;
+			color: $white;
+		}
+	}
+}
+/* NEWS */
 
 @import "media.scss";
