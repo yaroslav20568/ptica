@@ -73,4 +73,124 @@
 			</div>
 		</div>
 	</section>
+
+	<section class="pavilions">
+		<div class="container">
+			<div class="pavilions__content">
+				<div class="pavilions__left">
+					<img src="@img/pavilions/pavilion.png" alt="Беседка" class="pavilions__pavilion-img">
+				</div>
+
+				<div class="pavilions__right">
+					<div class="pavilions__wrapper-phone">
+						<a href="tel:+375292848472" class="pavilions__phone">
+							<p>+375 29 284 84 72</p>
+						</a>
+					</div>
+
+					<div class="pavilions__text">
+						Предлагаем вашему вниманию удобные беседки в живописном месте на озере Бросты в 3 км от Гродно
+					</div>
+
+					<a href="#" class="pavilions__btn">Узнать подробнее</a>
+
+					<img src="@img/pavilions/leafs.png" alt="Листва" class="pavilions__leafs-img">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="slider section">
+		<div class="container">
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="@img/slider/1.png" alt="">
+						</a>
+					</div>
+				
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="@img/slider/2.png" alt="">
+						</a>
+					</div>
+
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="@img/slider/3.png" alt="">
+						</a>
+					</div>
+
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="@img/slider/4.png" alt="">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="@img/slider/5.png" alt="">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="@img/slider/6.png" alt="">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="@img/slider/7.png" alt="">
+						</a>
+					</div>
+				
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="@img/slider/8.png" alt="">
+						</a>
+					</div>
+
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="@img/slider/9.png" alt="">
+						</a>
+					</div>
+
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="@img/slider/10.png" alt="">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="@img/slider/11.png" alt="">
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="@img/slider/12.png" alt="">
+						</a>
+					</div>
+				</div>
+
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</section>
 </main>
+
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+	slidesPerView: 4,
+	slidesPerGroup: 4,
+	spaceBetween: 20,
+	pagination: {
+	  el: ".swiper-pagination",
+	  clickable: true,
+	},
+  });
+</script>
