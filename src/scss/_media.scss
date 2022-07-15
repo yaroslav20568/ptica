@@ -169,6 +169,16 @@
 			}
 		}
 	}
+
+	.swiper {
+		&-wrapper {
+			margin-bottom: 0;
+		}
+
+		&-pagination {
+			display: none;
+		}
+	}
 }
 
 @media(max-width: 480px) {
