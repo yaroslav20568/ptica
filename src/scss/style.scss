@@ -487,17 +487,24 @@ body {
 	}
 
 	&__imgs {
-		max-width: 586px;
-		margin: 0 -4px;
+		// max-width: 586px;
+		// width: 49%;
+		// margin: 0 -4px;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 -10px;
 	}
 
 	&__img {
-		padding: 0 4px;
-		width: 32.7%;
+		// padding: 0 4px;
+		// width: 32.7%;
+		max-width: 100%;
+		padding: 0 10px;
 	}
 
 	&__info {
 		max-width: 484px;
+		// width: 40%;
 	}
 
 	&__info-text {
@@ -550,6 +557,7 @@ body {
 		&__title {
 			font-size: 48px;
 			line-height: 1.229;
+			font-weight: 500;
 			color: #01372A;
 			margin-bottom: 16px;
 		}

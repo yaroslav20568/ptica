@@ -57,6 +57,27 @@
 	}
 }
 
+@media(max-width: 1150px) {
+	.about-us {
+		&__content {
+			display: block;
+		}
+
+		&__imgs {
+			justify-content: start;
+			margin-bottom: 30px;
+		}
+
+		&__info {
+			max-width: none;
+
+			&-text {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
 @media(max-width: 1030px) {
 	.footer {
 		&__bottom-inner {
@@ -170,6 +191,12 @@
 			font-size: 18px;
 		}
 	}
+
+	// .about-us {
+	// 	&__img {
+	// 		width: 33.33333%;
+	// 	}
+	// }
 	
 	.info {
 		&-item {
@@ -407,6 +434,32 @@
 }
 
 @media(max-width: 380px) {
+	.about-us {
+		&__imgs {
+			display: block;
+		}
+
+		&__img {
+			width: 100%;
+		}
+
+		picture {
+			.about-us__img {
+				margin-bottom: 30px;
+			}
+
+			&:nth-child(2) {
+				.about-us__img {
+					margin-bottom: 0;
+				}
+			}
+
+			&:last-child {
+				display: none;
+			}
+		}
+	}
+
 	.header {
 		&-logo {
 			&__img {

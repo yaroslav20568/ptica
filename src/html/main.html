@@ -5,9 +5,23 @@
 
 			<div class="about-us__content section__content">
 				<div class="about-us__imgs">
-					<img src="@img/about-us/chikens-big.jpg" alt="" class="about-us__img">
-					<img src="@img/about-us/chikens-small.jpg" alt="" class="about-us__img">
-					<img src="@img/about-us/eggs.jpg" alt="" class="about-us__img">
+					<!-- <img src="@img/about-us/chikens-big.jpg" alt="" class="about-us__img"> -->
+					<picture>
+						<source srcset="@img/about-us/chikens-big280.jpg" media="(max-width: 380px)">
+						<source srcset="@img/about-us/chikens-big.jpg">
+						<img srcset="@img/about-us/chikens-big.jpg" alt="" class="about-us__img">
+					</picture>
+					<!-- <img src="@img/about-us/chikens-small.jpg" alt="" class="about-us__img"> -->
+					<picture>
+						<source srcset="@img/about-us/chikens-small280.jpg" media="(max-width: 380px)">
+						<source srcset="@img/about-us/chikens-small.jpg">
+						<img srcset="@img/about-us/chikens-small.jpg" alt="" class="about-us__img">
+					</picture>
+					<!-- <img src="@img/about-us/eggs.jpg" alt="" class="about-us__img"> -->
+					<picture>
+						<source srcset="@img/about-us/eggs.jpg">
+						<img srcset="@img/about-us/eggs.jpg" alt="" class="about-us__img">
+					</picture>
 				</div>
 				<div class="about-us__info">
 					<p class="about-us__info-text">Гродненская птицефабрика основана в 1962 году на базе Гродненской инкубаторно-птицеводческой станции (ИПС) и в настоящий момент коммунальное производственное сельскохозяйственное унитарное предприятие «Гродненская птицефабрика» - крупнейшее в области птицеводческое предприятие, которое располагает мощностями для производства 100 миллионов яиц в год. Её знают далеко за пределами республики: в Москве и других регионах России. У фабрики широко развита сеть торговых точек на рынках областного центра, а так же Гомеля.</p>
