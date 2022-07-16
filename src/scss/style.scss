@@ -659,6 +659,7 @@ body {
 		
 		a {
 			display: block;
+			height: 100%;
 			transition: .3s linear transform;
 
 			&:hover {
@@ -725,7 +726,7 @@ body {
 .pavilions {
 	&__content {
 		background-image: url("@img/pavilions/pavilions-bg.jpg");
-		background-repeat: no-repeat;
+		// background-repeat: no-repeat;
 		display: flex;
 		justify-content: space-between;
 		overflow: hidden;
