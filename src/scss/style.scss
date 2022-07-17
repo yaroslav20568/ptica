@@ -938,6 +938,12 @@ body {
 	
 		&__eye-img {
 		}
+
+		&__outside-eye {
+			display: none;
+			margin-left: 8px;
+			margin-bottom: 40px;
+		}
 	}
 
 	&__nav {

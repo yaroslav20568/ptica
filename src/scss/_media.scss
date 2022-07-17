@@ -184,6 +184,12 @@
 			order: 0;
 		}
 
+		&-widget {
+			&__outside-eye {
+				order: 2;
+			}
+		}
+
 		&__logo {
 			margin-bottom: 0;
 		}
@@ -191,7 +197,7 @@
 		&__nav {
 			width: 100%;
 			// margin-bottom: 20px;
-			order: 2;
+			order: 3;
 		}
 
 		&-nav {
@@ -456,7 +462,7 @@
 
 	.footer {
 		&__logo {
-			margin-bottom: 20px;
+			// margin-bottom: 20px;
 		}
 
 		&__widgets {
@@ -465,7 +471,8 @@
 
 		&-widget {
 			&__eye {
-				margin-left: 8px;
+				// margin-left: 8px;
+				display: none;
 
 				&-img {
 					margin-right: 13px;
@@ -475,6 +482,14 @@
 				// 	display: none;
 				// }
 			}
+
+			&__outside-eye {
+				display: block;
+			}
+		}
+
+		&__contacts {
+			margin-bottom: 21px;
 		}
 	}
 }
@@ -648,7 +663,7 @@
 
 			span {
 				font-size: 15px;
-				margin-right: 20px;
+				margin-right: 10px;
 			}
 		}
 	}
