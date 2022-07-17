@@ -290,6 +290,7 @@
 	.pavilions {
 		&__content {
 			display: block;
+			background-size: contain;
 		}
 
 		&__left, &__right {
@@ -312,11 +313,12 @@
 		}
 
 		&__wrapper-phone {
-			padding: 12px 0;
+			padding: 24px 0;
+			display: none;
 
 			&:before {
 				width: 100%;
-				height: 48px;
+				height: 72px;
 				left: 0;
 			}
 
@@ -325,12 +327,21 @@
 			}
 		}
 
+		&__outside-wrapper-phone {
+			display: block;
+		}
+
 		&__phone {
-			padding: 0 15px;
+			padding: 0 30px;
 		}
 
 		&__text {
 			margin: 30px 0;
+		}
+
+		&__leafs-img {
+			right: 0;
+			height: 100%;
 		}
 	}
 
@@ -502,13 +513,13 @@
 			}
 		}
 
-		&__wrapper-btn {
-			text-align: center;
-		}
+		// &__wrapper-btn {
+		// 	text-align: center;
+		// }
 
-		&__btn {
-			width: 100%;
-		}
+		// &__btn {
+		// 	width: 100%;
+		// }
 	}
 
 	.footer {
@@ -639,6 +650,39 @@
 			&__language {
 				margin-right: 50px;
 			}
+		}
+	}
+
+	.news {
+		&__wrapper-btn {
+			text-align: center;
+		}
+
+		&__btn {
+			width: 100%;
+		}
+	}
+
+	.pavilions {
+		&__text {
+			margin: 0;
+			font-family: $Montserrat;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 1.25;
+
+		}
+
+		&__btn {
+			display: none;
+		}
+
+		&__outside-btn {
+			display: block;
+		}
+
+		&__leafs-img {
+			height: 140%;
 		}
 	}
 	
