@@ -31,3 +31,42 @@ document.addEventListener('DOMContentLoaded', () => {
 	addArrowLink('.header-burger-nav__link');
 	/* HEADER */
 });
+
+  var swiper = new Swiper(".mySwiper", {
+	// slidesPerView: 5,
+	// slidesPerGroup: 5,
+	spaceBetween: 20,
+	autoplay: true,
+	speed: 1000,
+	pagination: {
+	  el: ".swiper-pagination",
+	  clickable: true,
+	},
+
+	breakpoints: {
+		1200: {
+			slidesPerView: 5,
+			slidesPerGroup: 5,
+		},
+
+		992: {
+			slidesPerView: 4,
+			slidesPerGroup: 4,
+		},
+
+		768: {
+			slidesPerView: 3,
+			slidesPerGroup: 3,
+		},
+
+		420: {
+			slidesPerView: 2,
+			slidesPerGroup: 2,
+		},
+		
+		280: {
+			slidesPerView: 1,
+			slidesPerGroup: 1,
+		}
+	}
+});
