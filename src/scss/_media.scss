@@ -91,6 +91,12 @@
 			}
 		}
 	}
+
+	.about-us380 {
+		&__content {
+			display: none;
+		}
+	}
 }
 
 @media(max-width: 1030px) {
@@ -665,6 +671,33 @@
 
 			&:last-child {
 				display: none;
+			}
+		}
+	}
+
+	.about-us {
+		&__content {
+			display: none;
+		}
+	}
+
+	.about-us380 {
+		&__content {
+			display: block;
+		}
+
+		&__text {
+			margin-bottom: 30px;
+		}
+
+		&__img {
+			padding: 0;
+			margin-bottom: 30px;
+		}
+
+		&__text, &__img {
+			&:nth-last-child(-n+2) {
+				margin-bottom: 20px;
 			}
 		}
 	}
