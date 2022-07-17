@@ -148,7 +148,12 @@
 		<div class="container">
 			<div class="pavilions__content">
 				<div class="pavilions__left">
-					<img src="@img/pavilions/pavilion.png" alt="Беседка" class="pavilions__pavilion-img">
+					<!-- <img src="@img/pavilions/pavilion.png" alt="Беседка" class="pavilions__pavilion-img"> -->
+					<picture>
+						<source srcset="@img/pavilions/pavilion280.jpg" media="(max-width: 380px)">
+						<source srcset="@img/pavilions/pavilion.png">
+						<img srcset="@img/pavilions/pavilion.png" alt="Беседка" class="pavilions__pavilion-img">
+					</picture>
 				</div>
 
 				<div class="pavilions__right">

@@ -57,8 +57,13 @@
 	}
 
 	.pavilions {
+		&__right {
+			padding-right: 9%;
+		}
+
 		&__leafs-img {
-			display: none;
+			// display: none;
+			right: -12%;
 		}
 
 		&__text {
@@ -129,6 +134,26 @@
 
 	.info {
 		padding: 60px 0 42px;
+	}
+
+	.pavilions {
+		&__left, &__right {
+			width: 50%;
+		}
+
+		&__leafs-img {
+			top: -2%;
+		}
+
+		&__phone {
+			position: relative;
+			z-index: 100;
+		}
+
+		&__btn {
+			position: relative;
+			z-index: 100;
+		}
 	}
 
 	.we-produce {
@@ -266,7 +291,7 @@
 		}
 
 		&__left {
-			padding: 15px;
+			// padding: 15px;
 		}
 
 		&__pavilion-img {
@@ -276,7 +301,8 @@
 		&__right {
 			max-width: none;
 
-			padding: 20px 15px;
+			// padding: 20px 15px;
+			padding: 23px 41px 23px 18px;
 		}
 
 		&__wrapper-phone {
@@ -364,6 +390,19 @@
 
 		&__img {
 				
+		}
+
+		&__btn {
+			display: none;
+		}
+
+		.container-outside-btn {
+			position: absolute;
+			bottom: 40px;
+		}
+
+		&__outside-btn {
+			display: inline-block;
 		}
 	}
 
@@ -480,12 +519,17 @@
 
 @media(max-width: 420px) {
 	.intro {
-		&__btn {
-			width: 100%;
-			text-align: center;
-			position: absolute;
-			bottom: -168%;		
-		}
+		// &__btn {
+		// 	width: 100%;
+		// 	text-align: center;
+		// 	position: absolute;
+		// 	bottom: -168%;		
+		// }
+
+		// .container-outside-btn {
+		// 	position: absolute;
+		// 	bottom: 40px;
+		// }
 	}
 
 	.header {
@@ -528,6 +572,17 @@
 }
 
 @media(max-width: 380px) {
+	.intro {
+		.container-outside-btn {
+			width: 100%;
+			text-align: center;
+		}
+
+		&__outside-btn {
+			width: 100%;
+		}
+	}
+
 	.about-us {
 		&__imgs {
 			display: block;
