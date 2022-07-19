@@ -176,6 +176,13 @@
 		}
 	}
 
+	.main {
+		&__title {
+			font-size: 28px;
+			padding: 30px 0;
+		}
+	}
+
 	.footer {
 		&__top-inner {
 			// display: block;

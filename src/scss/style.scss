@@ -955,6 +955,16 @@ body {
 /* SLIDER */
 
 /* FOOTER */
+
+.main {
+	&__title {
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 1.222;
+		padding: 50px 0;
+	}
+}
+
 .footer {
 
 	&__top {
