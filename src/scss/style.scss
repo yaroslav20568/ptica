@@ -133,6 +133,7 @@ body {
 
 			&.active {
 				padding-bottom: 8px;
+				// position: relative;
 
 				&:after {
 					content: "";
@@ -164,6 +165,21 @@ body {
 
 				a {
 					color: $black;
+					position: relative;
+
+					&.active {
+						padding-bottom: 4px;
+		
+						&:after {
+							content: "";
+							display: block;
+							width: 100%;
+							height: 1px;
+							background-color: $green;
+							position: absolute;
+							bottom: 0;
+						}
+					}
 				}
 			}
 		}
@@ -255,7 +271,7 @@ body {
 				// }
 	
 				&.active {
-					padding-bottom: 8px;
+					padding-bottom: 4px;
 	
 					&:after {
 						content: "";
@@ -286,6 +302,21 @@ body {
 	
 					a {
 						color: $black;
+						position: relative;
+
+						&.active {
+							padding-bottom: 4px;
+			
+							&:after {
+								content: "";
+								display: block;
+								width: 100%;
+								height: 1px;
+								background-color: $green;
+								position: absolute;
+								bottom: 0;
+							}
+						}
 					}
 				}
 			}
@@ -859,10 +890,13 @@ body {
 
 /* SLIDER */
 .swiper {
-	margin: 0 -11px;
+	// margin: 0 -11px;
 
 	&-wrapper {
 		margin-bottom: 50px;
+
+		display: flex;
+		align-items: center;
 	}
 
 	&-slide {
@@ -881,6 +915,10 @@ body {
 
 	.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
 		bottom: 0;
+	}
+
+	&-pagination {
+		position: static;
 	}
 
 	&-pagination-bullet {
