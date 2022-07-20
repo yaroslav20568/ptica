@@ -956,15 +956,6 @@ body {
 
 /* FOOTER */
 
-.main {
-	&__title {
-		font-weight: 500;
-		font-size: 36px;
-		line-height: 1.222;
-		padding: 50px 0;
-	}
-}
-
 .footer {
 
 	&__top {
@@ -1151,5 +1142,164 @@ body {
 	}
 }
 /* FOOTER */
+
+/* CONTACTS */
+.contacts {
+	padding: 90px 0 0;
+
+	&__title {
+
+	}
+
+	&__content {
+	}
+
+	&__cards {
+		margin: 0 -10px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__card {
+		// background-color: #F2F2F2;
+		width: 50%;
+		padding: 0 10px;
+		margin-bottom: 20px;
+
+		&:nth-last-child(-n+2) {
+			margin-bottom: 0;
+		}
+	}
+
+	&-card {
+		&__inner {
+			padding: 40px;
+			height: 100%;
+			background-color: #f2f2f2;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__left {
+			max-width: 243px;
+		}
+
+		&__post {
+			line-height: 130%;
+		}
+
+		&__right {
+			max-width: 190px;
+		}
+
+		&__fio {
+			font-family: 'Montserrat';
+			font-weight: 600;
+			line-height: 130%;
+			margin-bottom: 20px;
+		}
+
+		&__phone {
+			padding-left: 38px;
+			position: relative;
+			display: block;
+			margin-left: 3px;
+
+			p {
+				font-size: 16px;
+				line-height: 130%;
+				color: $black;
+			}
+	
+			&:before {
+				content: "";
+				display: block;
+				width: 23px;
+				height: 23px;
+				background-image: url("@img/footer/phone.svg");
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				margin-left: 1px;
+			}
+		}
+	}
+}
+/* CONTACTS */
+
+/* OUR-ADDRESSES */
+.our-addresses {
+	&__title {
+
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 -10px;
+	}
+
+	&__left, &__right {
+		padding: 0 10px;
+	}
+
+	&__left {
+		max-width: 485px;
+		// margin-right: 20px;
+
+		&-address {
+			line-height: 130%;
+			margin-bottom: 30px;
+
+			span {
+				display: block;
+				font-weight: 600;
+				color: #01372A;
+			}
+		}
+
+		&-map {
+			height: 259px;
+		}
+	}
+
+	&__right {
+		max-width: 586px;
+
+		&-address {
+			line-height: 130%;
+
+			span {
+				display: block;
+				font-weight: 600;
+				color: #01372A;
+			}
+		}
+
+		&-email {
+			line-height: 130%;
+			margin-bottom: 30px;
+
+			span {
+				// display: block;
+				font-weight: 600;
+				color: #01372A;
+			}
+		}
+
+		&-requisites {
+			line-height: 170%;
+
+			span {
+				display: block;
+				font-weight: 600;
+				color: #01372A;
+				margin-bottom: 15px;
+			}
+		}
+	}
+}
+/* OUR-ADDRESSES */
 
 @import "media.scss";
