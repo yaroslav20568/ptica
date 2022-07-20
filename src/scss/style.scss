@@ -1377,6 +1377,25 @@ body {
 			}
 		}
 	}
+
+	&__contact {
+		margin-top: 20px;
+		
+
+		span {
+			&:first-child {
+				font-weight: 500;
+			}
+			
+			&:last-child {
+				font-weight: 400;
+
+				// a {
+				// 	color: $black;
+				// }
+			}
+		}
+	}
 }
 /* VACANCY */
 

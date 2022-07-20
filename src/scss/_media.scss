@@ -657,6 +657,15 @@
 				padding: 20px;
 			}
 		}
+
+		&__contact {
+			span {
+				&:first-child {
+					display: block;
+					margin-bottom: 10px;
+				}
+			}
+		}
 	}
 }
 
