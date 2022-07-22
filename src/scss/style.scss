@@ -1430,4 +1430,11 @@ body {
 }
 /* VACANCY */
 
+.pagination {text-align: center;margin-top: 30px;}
+.pagination li {display: inline-block;padding: 2px;list-style-type: none;}
+.pagination a, .pagination span {display: block;padding: 0px;text-decoration: none;text-shadow: none;float: left;border-radius: 35px;background: #4f4f4e;overflow: hidden;color: #fff;font-size: 15px;cursor: pointer;padding: 10px 15px;}
+.pagination li:first-child a, .pagination li:last-child a {width: auto;}
+.pagination .disabled span {color: #adadad}
+.pagination .active a, .pagination li:hover a, .pagination .active span, .pagination li:hover span {background: #c00;color: #fff;}
+
 @import "media.scss";
