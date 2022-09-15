@@ -51,11 +51,17 @@
 			</nav>
 			<div class="header__widgets">
 				<div class="header-widget__eye">
-					<img src="@img/eye.svg" alt="Версия для слабовидящих" class="header-widget__eye-img">
+					<a href="javascript://" onclick="letsee_toggle_panel()">
+						<img src="@img/eye.svg" alt="Версия для слабовидящих" class="header-widget__eye-img">
+					</a>
 				</div>
 
 				<div class="header-widget__language">
-					<div class="header-widget__language-text">RU</div>
+					<div class="header-widget__language-text">
+						<div class="lang__link lang__link_select" data-lang-active>
+							RU
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="header__burger">
@@ -110,6 +116,13 @@
 			</li>
 		</ul>
 	</nav>
+
+	<div class="header-widget__language-list">
+		<div class="container">
+			<div id="ytWidget" style="display: none;"></div>
+			<div class="header-widget__language-items" data-lang-list></div>
+		</div>
+	</div>
 </header>
 
 <div class="intro">
