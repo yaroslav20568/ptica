@@ -1135,11 +1135,12 @@ body {
 			cursor: pointer;
 
 			span {
-				display: inline-block;
-				vertical-align: sub;
+				// display: inline-block;
+				// vertical-align: sub;
 				font-size: 16px;
 				line-height: 130%;
 				color: $black;
+				margin-left: 20px;
 			}
 		}
 	
@@ -1562,6 +1563,10 @@ body {
 /* HALL-OF-FAME */
 
 
+.spec {
+	display: flex;
+	align-items: center;
+}
 
 
 .pagination {text-align: center;margin-top: 30px;}
