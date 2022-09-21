@@ -234,7 +234,7 @@
 							<button class="electronic-appeals__tabs-btn">Юридические лица</button>
 						</div>
 						<div class="electronic-appeals__tabs-content">
-							<form action="#" class="electronic-appeals__tabs-form">
+							<form action="#" class="electronic-appeals__tabs-form active">
 								<div class="electronic-appeals__form-left">
 									<input type="text" name="name" placeholder="*Наименование юридического лица" class="electronic-appeals__form-input">
 									<input type="text" name="email" placeholder="*Адрес электронной почты" class="electronic-appeals__form-input">
@@ -248,12 +248,39 @@
 								</div>
 								<div class="electronic-appeals__form-right">
 									<input type="text" name="fio" placeholder="ФИО руководителя" class="electronic-appeals__form-input">
-									<textarea name="message" placeholder="Текст сообщения" class="electronic-appeals__form-textarea"></textarea>
+									<textarea name="message" placeholder="Текст сообщения" class="electronic-appeals__form-textarea electronic-appeals__form-textarea-small"></textarea>
 									<label for="checkbox" class="electronic-appeals__form-checkbox">
 										<input type="checkbox" name="agree" id="checkbox" class="electronic-appeals__form-real-checkbox">
 										<div class="electronic-appeals__form-fake-checkbox">
 											<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M1 5.5L4.5 9L9 1" stroke="#01372A"/>
+												<path d="M1 5.5L4.5 9L9 1" stroke="#transparent"/>
+											</svg>											
+										</div>
+										<div class="electronic-appeals__form-checkbox-text">Я согласен на <a href="#">обработку персональных данных</a></div>
+									</label>
+									<input type="submit" class="electronic-appeals__form-submit">
+								</div>
+							</form>
+
+							<form action="#" class="electronic-appeals__tabs-form">
+								<div class="electronic-appeals__form-left">
+									<input type="text" name="name" placeholder="*Наименование юридического лица" class="electronic-appeals__form-input">
+									<input type="text" name="email" placeholder="*Адрес электронной почты" class="electronic-appeals__form-input">
+									<input type="text" name="address" placeholder="Адрес юридического лица" class="electronic-appeals__form-input">
+									<!-- <input type="file" name="file" class="electronic-appeals__form-file"> -->
+									<div class="electronic-appeals__form-file">
+										<input type="file" name="file" id="file">
+										<div>Файл не выбран</div>
+										<label for="file">Прикрепить файл</label>
+									</div>
+								</div>
+								<div class="electronic-appeals__form-right">
+									<textarea name="message" placeholder="Текст сообщения" class="electronic-appeals__form-textarea electronic-appeals__form-textarea-big"></textarea>
+									<label for="checkbox" class="electronic-appeals__form-checkbox">
+										<input type="checkbox" name="agree" id="checkbox" class="electronic-appeals__form-real-checkbox">
+										<div class="electronic-appeals__form-fake-checkbox">
+											<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 5.5L4.5 9L9 1" stroke="#transparent"/>
 											</svg>											
 										</div>
 										<div class="electronic-appeals__form-checkbox-text">Я согласен на <a href="#">обработку персональных данных</a></div>

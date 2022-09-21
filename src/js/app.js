@@ -112,3 +112,35 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
+
+
+/* CONTACTS-TABS */
+const electronicAppealsTabsBtnsContainer = document.querySelector('.electronic-appeals__tabs-btns');
+const electronicAppealsTabsBtns = document.querySelectorAll('.electronic-appeals__tabs-btn');
+
+const showForm = (indexForm) => {
+  const forms = document.querySelectorAll('.electronic-appeals__tabs-form');
+
+  forms.forEach((form, index) => {
+    form.classList.remove('active');
+    
+    if(indexForm === index) {
+      form.classList.add('active');
+    }
+  });
+}
+
+electronicAppealsTabsBtnsContainer.addEventListener('click', (e) => {
+  if(e.target.tagName === 'BUTTON') {
+    electronicAppealsTabsBtns.forEach((electronicAppealsTabsBtn, index) => {
+      electronicAppealsTabsBtn.classList.remove('active');
+
+      if(e.target === electronicAppealsTabsBtn) {
+        showForm(index);
+      }
+    });
+
+    e.target.classList.add('active');
+  }
+});
+/* CONTACTS-TABS */

@@ -114,6 +114,14 @@
 			margin: 66px 0;
 		}
 	}
+
+	.electronic-appeals {
+		&__tabs {
+			&-content {
+				padding: 55px 50px 25px;;
+			}
+		}
+	}
 }
 
 @media(max-width: 1150px) {
@@ -338,6 +346,18 @@
 			}
 		}
 	}
+
+	.electronic-appeals {
+		&__form-left, &__form-right {
+			width: 100%;
+		}
+
+		&__form {
+			&-file {
+				margin-bottom: 20px;
+			}
+		}
+	}
 }
 
 @media(max-width: 850px) {
@@ -350,6 +370,18 @@
 
 			&__date {
 				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.electronic-appeals {
+		&__tabs {
+			&-btns {
+				flex-wrap: wrap;
+			}
+
+			&-btn {
+				width: 100%;
 			}
 		}
 	}
@@ -736,6 +768,14 @@
 			width: 100%;
 		}
 	}
+
+	.electronic-appeals {
+		&__tabs {
+			&-content {
+				padding: 25px 10px 15px;
+			}
+		}
+	}
 }
 
 @media(max-width: 480px) {
@@ -849,6 +889,16 @@
 	.swiper {
 		.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
 			margin: 0 10px 0 0;
+		}
+	}
+
+	.electronic-appeals {
+		&__form {
+			&-input, &-textarea {
+				&::placeholder {
+					font-size: 11px;
+				}
+			}
 		}
 	}
 }

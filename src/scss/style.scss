@@ -1607,8 +1607,13 @@ body {
 		}
 
 		&-form {
-			display: flex;
+			display: none;
 			margin: 0 -10px;
+
+			&.active {
+				display: flex;
+				flex-wrap: wrap;
+			}
 		}
 	}
 
@@ -1643,7 +1648,14 @@ body {
 
 		&-textarea {
 			resize: none;
-			padding-bottom: 77px;
+			
+			&-small {
+				padding-bottom: 77px;
+			}
+
+			&-big {
+				padding-bottom: 150px;
+			}
 		}
 
 		&-submit {
