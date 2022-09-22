@@ -117,15 +117,14 @@
 
 				<div class="contacts__content">
 					<div class="contacts__cards">
-						<div class="contacts__card">
+						<div class="contacts__card contacts__card-with-photo">
 							<div class="contacts-card__inner">
-								<div class="contacts-card__left">
-									<h4 class="contacts-card__post">Заместитель директора по производству</h4>
-								</div>
-	
-								<div class="contacts-card__right">
+								<img src="@img/contact-photo.svg" />
+								<div class="contacts-card__info">
 									<h4 class="contacts-card__fio">Шкнай Александр Геннадьевич</h4>
-	
+
+									<h4 class="contacts-card__post">Заместитель директора по производству</h4>
+		
 									<a href="tel:80152681462" class="contacts-card__phone">
 										<p>8 (0152) 68-14-62</p>
 									</a>
@@ -133,15 +132,15 @@
 							</div>
 						</div>
 
-						<div class="contacts__card">
+						<div class="contacts__card contacts__card-with-photo">
 							<div class="contacts-card__inner">
-								<div class="contacts-card__left">
-									<h4 class="contacts-card__post">Заместитель директора по коммерческим вопросам</h4>
-								</div>
-	
-								<div class="contacts-card__right">
+								<img src="@img/contact-photo.svg" />
+								
+								<div class="contacts-card__info">
 									<h4 class="contacts-card__fio">Скорб Янина Вацлавовна</h4>
-	
+
+									<h4 class="contacts-card__post">Заместитель директора по коммерческим вопросам</h4>
+									
 									<a href="tel:80152681462" class="contacts-card__phone">
 										<p>8 (0152) 60 22 63</p>
 									</a>
@@ -236,21 +235,20 @@
 						<div class="electronic-appeals__tabs-content">
 							<form action="#" class="electronic-appeals__tabs-form active">
 								<div class="electronic-appeals__form-left">
-									<input type="text" name="name" placeholder="*Наименование юридического лица" class="electronic-appeals__form-input">
-									<input type="text" name="email" placeholder="*Адрес электронной почты" class="electronic-appeals__form-input">
-									<input type="text" name="address" placeholder="Адрес юридического лица" class="electronic-appeals__form-input">
+									<input type="text" name="name" placeholder="*Имя" class="electronic-appeals__form-input required-field">
+									<input type="text" name="email" placeholder="*Адрес электронной почты" class="electronic-appeals__form-input required-field">
+									<input type="text" name="address" placeholder="Адрес места жительства" class="electronic-appeals__form-input">
 									<!-- <input type="file" name="file" class="electronic-appeals__form-file"> -->
 									<div class="electronic-appeals__form-file">
-										<input type="file" name="file" id="file">
+										<input type="file" name="file" id="file1">
 										<div>Файл не выбран</div>
-										<label for="file">Прикрепить файл</label>
+										<label for="file1">Прикрепить файл</label>
 									</div>
 								</div>
 								<div class="electronic-appeals__form-right">
-									<input type="text" name="fio" placeholder="ФИО руководителя" class="electronic-appeals__form-input">
-									<textarea name="message" placeholder="Текст сообщения" class="electronic-appeals__form-textarea electronic-appeals__form-textarea-small"></textarea>
-									<label for="checkbox" class="electronic-appeals__form-checkbox">
-										<input type="checkbox" name="agree" id="checkbox" class="electronic-appeals__form-real-checkbox">
+									<textarea name="message" placeholder="Текст сообщения" class="electronic-appeals__form-textarea electronic-appeals__form-textarea-big"></textarea>
+									<label for="checkbox1" class="electronic-appeals__form-checkbox">
+										<input type="checkbox" name="agree" id="checkbox1" class="electronic-appeals__form-real-checkbox required-field">
 										<div class="electronic-appeals__form-fake-checkbox">
 											<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M1 5.5L4.5 9L9 1" stroke="#transparent"/>
@@ -264,20 +262,21 @@
 
 							<form action="#" class="electronic-appeals__tabs-form">
 								<div class="electronic-appeals__form-left">
-									<input type="text" name="name" placeholder="*Наименование юридического лица" class="electronic-appeals__form-input">
-									<input type="text" name="email" placeholder="*Адрес электронной почты" class="electronic-appeals__form-input">
+									<input type="text" name="name" placeholder="*Наименование юридического лица" class="electronic-appeals__form-input required-field">
+									<input type="text" name="email" placeholder="*Адрес электронной почты" class="electronic-appeals__form-input required-field">
 									<input type="text" name="address" placeholder="Адрес юридического лица" class="electronic-appeals__form-input">
 									<!-- <input type="file" name="file" class="electronic-appeals__form-file"> -->
 									<div class="electronic-appeals__form-file">
-										<input type="file" name="file" id="file">
+										<input type="file" name="file" id="file2">
 										<div>Файл не выбран</div>
-										<label for="file">Прикрепить файл</label>
+										<label for="file2">Прикрепить файл</label>
 									</div>
 								</div>
 								<div class="electronic-appeals__form-right">
-									<textarea name="message" placeholder="Текст сообщения" class="electronic-appeals__form-textarea electronic-appeals__form-textarea-big"></textarea>
-									<label for="checkbox" class="electronic-appeals__form-checkbox">
-										<input type="checkbox" name="agree" id="checkbox" class="electronic-appeals__form-real-checkbox">
+									<input type="text" name="fio" placeholder="ФИО руководителя" class="electronic-appeals__form-input">
+									<textarea name="message" placeholder="Текст сообщения" class="electronic-appeals__form-textarea electronic-appeals__form-textarea-small"></textarea>
+									<label for="checkbox2" class="electronic-appeals__form-checkbox">
+										<input type="checkbox" name="agree" id="checkbox2" class="electronic-appeals__form-real-checkbox required-field">
 										<div class="electronic-appeals__form-fake-checkbox">
 											<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M1 5.5L4.5 9L9 1" stroke="#transparent"/>
@@ -296,6 +295,11 @@
 			</div>
 		</section>
 		</main>
+
+
+		<div class="form-alert">
+			<div class="form-alert__text"></div>
+		</div>
 
 		@@include('html/footer.html')
 

@@ -144,3 +144,92 @@ electronicAppealsTabsBtnsContainer.addEventListener('click', (e) => {
   }
 });
 /* CONTACTS-TABS */
+
+
+
+/* CONTACT FORM */
+const submitBtns = document.querySelectorAll('.electronic-appeals__form-submit');
+
+submitBtns.forEach((submitBtn) => {
+  submitBtn.addEventListener ('click', (e) => {
+    e.preventDefault();
+
+    /**/
+    validationForm();
+    /**/
+
+    
+  });
+});
+/* CONTACT FORM */
+
+/* CONTACT FORM VALIDATION */
+const validationForm = () => {
+  const requiredFields = document.querySelectorAll('.electronic-appeals__tabs-form.active .required-field');
+
+  let arrayCount = [];
+
+  requiredFields.forEach(requiredField => {
+    if(requiredField.type === 'text' && requiredField.value) {
+      arrayCount = [...arrayCount, requiredField.name];
+    } else if(requiredField.type === 'checkbox' && requiredField.checked) {
+      arrayCount = [...arrayCount, requiredField.name];
+    }
+  });
+
+  if(requiredFields.length === arrayCount.length) {
+    resetInputs(requiredFields);
+    submitForm();
+  } else {
+    showAlert('Не все обязательные поля заполнены', 'red');
+  }
+}
+
+const submitForm = () => {
+  const activeForm = document.querySelector('.electronic-appeals__tabs-form.active');
+  const formData = new FormData(activeForm);
+  
+  formData.delete('file');
+  formData.delete('agree');
+
+  const fileInput = document.querySelector('.electronic-appeals__tabs-form.active .electronic-appeals__form-file input');
+  formData.append('file', fileInput.files[0]);
+
+  // const formAlert = document.querySelector('.form-alert');
+  // const formAlertText = document.querySelector('.form-alert__text');
+
+  fetch('assets/phpMail.php', {
+    method: 'POST',
+    body: formData
+  }).then(resp => {
+    if(resp.status === 200) {
+      showAlert('Данные успешно отправлены', '#01372A');
+    } else {
+      showAlert('Ошибка отправки', 'red');
+    }
+  })
+}
+
+const resetInputs = (requiredFields) => {
+  requiredFields.forEach(requiredField => {
+    if(requiredField.type === 'text' && requiredField.value) {
+      requiredField.value = '';
+    } else if(requiredField.type === 'checkbox' && requiredField.checked) {
+      requiredField.checked = false;
+    }
+  });
+}
+
+const showAlert = (text, backgroundColor) => {
+  const formAlert = document.querySelector('.form-alert');
+  const formAlertText = document.querySelector('.form-alert__text');
+
+  formAlert.classList.add('active');
+  formAlert.style.backgroundColor = backgroundColor;
+  formAlertText.textContent = text;
+
+  setTimeout(() => {
+    formAlert.classList.remove('active');
+  }, 2000);
+}
+/* CONTACT FORM VALIDATION */

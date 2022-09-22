@@ -1321,12 +1321,31 @@ body {
 		// }
 	}
 
+	&__card-with-photo .contacts-card__inner {
+		padding: 0;
+		justify-content: start;
+	}
+
+	&__card-with-photo .contacts-card__post {
+		margin-bottom: 20px;
+	}
+
 	&-card {
 		&__inner {
 			padding: 40px;
 			height: 100%;
 			background-color: #f2f2f2;
 			display: flex;
+			justify-content: space-between;
+		}
+
+		&__info {
+			width: 100%;
+    		padding: 26px;
+
+			height: 100%;
+			display: flex;
+			flex-direction: column;
 			justify-content: space-between;
 		}
 
@@ -1555,7 +1574,7 @@ body {
 	}
 
 	&__img {
-		width: 50%;
+		width: 25%;
 		padding: 0 10px;
 		margin-bottom: 20px;
 	}
@@ -1772,17 +1791,43 @@ body {
 		}
 	}
 }
-.electronic-appeals
-.electronic-appeals
-.electronic-appeals
-.electronic-appeals__tabs
-.electronic-appeals__tabs
-.electronic-appeals__tabs
-.electronic-appeals__tabs
-.electronic-appeals
-.electronic-appeals__form
-.electronic-appeals__form
 /* ELECTRONIC-APPEALS */
+
+/* FORM-ALERT */
+.form-alert {
+	background-color: $green;
+	position: fixed;
+	z-index: 10;
+	top: 40px;
+	right: 25px;
+	padding: 20px 20px;
+	opacity: 0;
+	transition: .3s linear opacity;
+
+	&.active {
+		opacity: 1;
+	}
+
+	&__text {
+		color: $white;
+		font-size: 16px;
+	}
+}
+/* FORM-ALERT */
+
+/* BREADCRUMB */
+.breadcrumbs {
+	span {
+		a {
+			color: $black;
+		}
+
+		&.active {
+			color: #7D7D7D;
+		}
+	}
+}
+/* BREADCRUMB */
 
 .pagination {text-align: center;margin-top: 30px;}
 .pagination li {display: inline-block;padding: 2px;list-style-type: none;}
