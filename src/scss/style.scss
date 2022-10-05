@@ -11,7 +11,7 @@ body {
 	line-height: 1.222;
 	font-family: $Montserrat;
 	color: $black;
-	background-color: $white;
+	background-color: #f9f9f9;
 }
 
 .container {
@@ -25,6 +25,25 @@ body {
 .header {
 	// padding: 28px 0;
 	// display: none;
+	background-color: $white;
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.08);
+
+	&--absolute {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		width: 100%;
+		background-color: transparent;
+		box-shadow: none;
+	}
+
+	&--absolute + .intro {
+		.intro__inner {
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
 
 	&__inner {
 		display: flex;
@@ -114,6 +133,11 @@ body {
 			color: $black;
 			position: relative;
 			padding-right: 15px;
+			transition: .3s linear color;
+
+			&:hover {
+				color: #47A76A;
+			}
 
 			&.have-children {
 				&:before {
@@ -170,6 +194,7 @@ body {
 
 			&-item {
 				margin-bottom: 30px;
+
 				&:last-child {
 					margin-bottom: 0;
 				}
@@ -178,6 +203,11 @@ body {
 					color: $black;
 					position: relative;
 					white-space: pre;
+					transition: .3s linear color;
+
+					&:hover {
+						color: #47A76A;
+					}
 
 					&.active {
 						padding-bottom: 4px;
@@ -517,7 +547,8 @@ body {
 
 	&__title {
 		font-family: 'Bookman Old Style';
-		max-width: 592px;
+		// max-width: 592px;
+		max-width: 430px;
 		font-weight: 300;
 		font-size: 52px;
 		line-height: 1.173;
@@ -529,7 +560,8 @@ body {
 		font-size: 28px;
 		line-height: 1.214;
 		color: $green;
-		margin-bottom: 117px;
+		// margin-bottom: 117px;
+		margin-bottom: 130px;
 	}
 
 	&__btn {
@@ -615,6 +647,8 @@ body {
 		color: $green;
 		position: relative;
 		padding-bottom: 4px;
+		opacity: .7;
+		transition: .3s linear opacity;
 
 		&:after {
 			content: "";
@@ -624,6 +658,10 @@ body {
 			background-color: $green;
 			position: absolute;
 			bottom: 0;
+		}
+
+		&:hover {
+			opacity: 1;
 		}
 	}
 }
@@ -1205,6 +1243,7 @@ body {
 				line-height: 130%;
 				color: $black;
 				margin-left: 20px;
+				text-align: left;
 			}
 		}
 	
@@ -1882,6 +1921,8 @@ body {
 
 /* BREADCRUMB */
 .breadcrumbs {
+	margin-top: 20px;
+
 	span {
 		a {
 			color: $black;
@@ -1893,6 +1934,44 @@ body {
 	}
 }
 /* BREADCRUMB */
+
+/* INTERNET-RESOURCES */
+.internet-resources {
+	padding: 0 0 120px;
+
+	&__title {
+
+	}
+
+	&__content {
+
+	}
+
+	&__items {
+		display: grid;
+		grid-template-columns: 283px 334px 283px;
+		gap: 30px 145px;
+	}
+
+	&__item {
+
+	}
+
+	&__link {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 130%;
+		color: $green;
+		opacity: .9;
+		transition: .3s linear opacity;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+/* INTERNET-RESOURCES */
+
 
 .pagination {text-align: center;margin-top: 30px;}
 .pagination li {display: inline-block;padding: 2px;list-style-type: none;}
