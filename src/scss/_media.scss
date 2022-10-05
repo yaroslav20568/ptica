@@ -16,6 +16,15 @@
 }
 
 @media(max-width: 1500px) {
+	.header {
+		&--absolute + .intro {
+			.intro__inner {
+				top: 50%;
+    			transform: translateY(-50%);
+			}
+		}
+	}
+
 	.intro {
 		&__inner {
 			top: 50%;
@@ -53,6 +62,10 @@
 	.header {
 		&__nav {
 			display: none;
+		}
+
+		&--absolute {
+			position: static;
 		}
 
 		// &-nav {
@@ -377,6 +390,28 @@
 	.internet-resources {
 		padding: 0 0 90px;
 	}
+
+	.about-company {
+		&__director {
+			&-info {
+				margin-bottom: 30px;
+			}
+			
+			&-name {
+				margin-bottom: 20px;
+			}
+		}
+
+		&__item {
+			margin-bottom: 30px;
+		}
+
+		&-item {
+			&__year {
+				margin-right: 40px;
+			}
+		}
+	}
 }
 
 @media(max-width: 850px) {
@@ -618,6 +653,20 @@
 			}
 		}
 	}
+
+	.about-company {
+		&-item {
+			&__inner {
+				display: block;
+			}
+
+			&__year {
+				display: inline-block;
+				margin-right: 0;
+				margin-bottom: 10px;
+			}
+		}
+	}
 }
 
 @media(max-width: 680px) {
@@ -664,9 +713,9 @@
 
 @media(max-width: 576px) {
 	.header {
-		&--absolute {
-			position: static;
-		}
+		// &--absolute {
+		// 	position: static;
+		// }
 
 		&--absolute + .intro {
 			.intro__inner {
@@ -929,6 +978,14 @@
 		// &__phone, &__email, &__address {
 		// 	padding-left: 35px;
 		// }
+	}
+
+	.about-company {
+		&-item {
+			&__year {
+				display: block;
+			}
+		}
 	}
 }
 
