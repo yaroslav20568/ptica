@@ -2087,6 +2087,9 @@ body {
 			margin-right: 46px;
 			margin-top: -15px;
 		}
+		&__titles {
+			max-width: 587px;
+		}
 		&__title {
 			font-weight: 600;
 			font-size: 24px;
@@ -2095,7 +2098,14 @@ body {
 			margin-bottom: 10px;
 		}
 		&__text {
-			max-width: 587px;
+			p {
+				line-height: 150%;
+				margin-bottom: 10px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
 		}
 		&__info-items {
 			width: 384px;
