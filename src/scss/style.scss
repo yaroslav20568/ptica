@@ -2108,6 +2108,11 @@ body {
 				font-size: 16px;
 				line-height: 150%;
 				color: #000000;
+				margin-bottom: 10px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
 
 				span {
 					font-weight: 500;
@@ -2128,6 +2133,193 @@ body {
 	}
 }
 /* TENANCY */
+
+/* ORGANIZATION-WORK-PEOPLE */
+.organization-work-people {
+	&__title {
+	}
+	&__items {
+	}
+	&__item {
+		margin-bottom: 60px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__item-row {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 60px;
+
+		&--center {
+			align-items: center;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		.organization-work-people__item {
+			margin-bottom: 0;
+		}
+	}
+	&__item-left, &__item-right {
+		.organization-work-people-item__text {
+			margin-bottom: 0;
+		}
+	}
+	&__item-left {
+		max-width: 642px;
+		margin-right: 30px;
+	}
+	&__item-right {
+		width: 485px;
+	}
+	&-item {
+		&__title {
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 130%;
+			color: $green;
+			margin-bottom: 40px;
+		}
+		&__text {
+			// font-weight: 400;
+			// font-size: 18px;
+			// line-height: 150%;
+			// color: $black;
+			margin-bottom: 40px;
+
+			p {
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 150%;
+				color: $black;
+				margin-bottom: 10px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+		&__img {
+			max-width: 100%;
+			margin-bottom: 40px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		&__wrapper-texts {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 40px;
+		}
+		&__background-text {
+			background-color: #F2F2F2;
+			padding: 27px 59px;
+			// font-size: 16px;
+			// line-height: 150%;
+			// color: $black;
+			margin-bottom: 40px;
+
+			p {
+				font-size: 16px;
+				line-height: 150%;
+				color: $black;
+				margin-bottom: 10px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+		&__link {
+			display: inline-block;
+			font-weight: 600;
+			line-height: 130%;
+			color: $green;
+			opacity: .7;
+			transition: .3s linear opacity;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+		&__left-texts {
+			max-width: 485px;
+			padding: 41px 26px;
+			background-color: #F2F2F2;
+			text-align: center;
+			margin-right: 30px;
+			
+			.organization-work-people-item-texts__title {
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 150%;
+				margin-bottom: 20px;
+			}
+
+			.organization-work-people-item-texts__item {
+				font-size: 16px;
+				line-height: 150%;
+				margin-bottom: 10px;
+				
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+		&__right-texts {
+			max-width: 644px;
+
+			.organization-work-people-item-texts__title {
+				font-weight: 500;
+				line-height: 150%;
+				margin-bottom: 20px;
+			}
+
+			.organization-work-people-item-texts__item {
+				line-height: 150%;
+				margin-bottom: 10px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+		&-texts {
+			&__title {
+			}
+			&__items {
+			}
+			&__item {
+			}
+		}
+		&__info-items {
+			background: #F2F2F2;
+			padding: 41px 46px;
+		}
+		&__info-item {
+			p {
+				font-size: 16px;
+				line-height: 150%;
+				color: #000000;
+				margin-bottom: 10px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				span {
+					font-weight: 500;
+				}
+			}
+		}
+	}
+}
+/* ORGANIZATION-WORK-PEOPLE */
 
 
 .pagination {text-align: center;margin-top: 30px;}

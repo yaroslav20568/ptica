@@ -144,6 +144,18 @@
 			}
 		}
 	}
+
+	.organization-work-people {
+		&-item {
+			&__left-texts, &__right-texts {
+				width: 50%;
+			}
+		}
+
+		&__item-left, &__item-right {
+			width: 50%;
+		}
+	}
 }
 
 @media(max-width: 1150px) {
@@ -444,6 +456,21 @@
 			}
 		}
 	}
+
+	.organization-work-people {
+		&__item {
+			margin-bottom: 40px;
+		}
+
+		&__item-left  {
+			margin-right: 0;
+			margin-bottom: 40px !important;
+		}
+
+		&__item-row {
+			margin-bottom: 40px !important;
+		}
+	}
 }
 
 @media(max-width: 850px) {
@@ -707,6 +734,45 @@
 			}
 		}
 	}
+
+	.organization-work-people {
+		&-item {
+			&__wrapper-texts {
+				display: block;
+			}
+
+			&__left-texts, &__right-texts {
+				width: 100%;
+				max-width: none;
+			}
+
+			&__left-texts {
+				margin-right: 0;
+				margin-bottom: 20px;
+			}
+		}
+
+		&__item-row {
+			display: block;
+		}
+
+		&__item-left, &__item-right {
+			width: 100%;
+			max-width: none;
+		}
+
+		.organization-work-people__item-row--center {
+			.organization-work-people__item-left  {
+				margin-right: 0;
+				margin-bottom: 20px !important;
+			}
+		}
+
+		// &__item-left  {
+		// 	margin-right: 0;
+		// 	margin-bottom: 60px !important;
+		// }
+	}
 }
 
 @media(max-width: 680px) {
@@ -964,6 +1030,14 @@
 	.internet-resources {
 		&__items {
 			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	.organization-work-people {
+		&-item {
+			&__left-texts, &__background-text, &__info-items {
+				padding: 20px 15px;
+			}
 		}
 	}
 }
