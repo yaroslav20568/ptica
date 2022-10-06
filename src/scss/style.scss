@@ -2051,6 +2051,84 @@ body {
 }
 /* ABOUT-COMPANY */
 
+/* TENANCY */
+.tenancy {
+	&__title {
+	}
+	&__items {
+	}
+	&__item {
+		margin-bottom: 50px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&-item {
+		&__top {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 50px;
+		}
+
+		&__left {
+			display: flex;
+			margin-right: 30px;
+		}
+		&__right {
+			
+		}
+		&__count {
+			min-width: 55px;
+			font-size: 96px;
+			line-height: 130%;
+			color: $green;
+			margin-right: 46px;
+			margin-top: -15px;
+		}
+		&__title {
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 130%;
+			color: $green;
+			margin-bottom: 10px;
+		}
+		&__text {
+			max-width: 587px;
+		}
+		&__info-items {
+			width: 384px;
+			text-align: center;
+			background: #F2F2F2;
+			padding: 20px 27px;
+		}
+		&__info-item {
+			p {
+				font-size: 16px;
+				line-height: 150%;
+				color: #000000;
+
+				span {
+					font-weight: 500;
+				}
+			}
+		}
+		&__imgs {
+
+		}
+		&__img {
+			max-width: 100%;
+			margin-bottom: 40px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+/* TENANCY */
+
 
 .pagination {text-align: center;margin-top: 30px;}
 .pagination li {display: inline-block;padding: 2px;list-style-type: none;}

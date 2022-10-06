@@ -413,6 +413,37 @@
 			}
 		}
 	}
+
+	.tenancy {
+		&-item {
+			&__top {
+				display: block;
+			}
+
+			&__left {
+				margin-bottom: 30px;
+				margin-right: 0;
+			}
+
+			&__info-items {
+				width: 50%;
+			}
+
+			&__count {
+				font-size: 70px;
+				min-width: 42px;
+				margin-right: 23px;
+			}
+
+			&__title {
+				font-size: 20px;
+			}
+
+			&__text {
+				max-width: none;
+			}
+		}
+	}
 }
 
 @media(max-width: 850px) {
@@ -665,6 +696,14 @@
 				display: inline-block;
 				margin-right: 0;
 				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.tenancy {
+		&-item {
+			&__info-items {
+				width: 100%;
 			}
 		}
 	}
@@ -1257,6 +1296,18 @@
 
 			&-submit {
 				width: 100%;
+			}
+		}
+	}
+
+	.tenancy {
+		&-item {
+			&__left {
+				display: block;
+			}
+
+			&__count {
+				margin-top: 0;
 			}
 		}
 	}
