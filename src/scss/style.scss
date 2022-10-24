@@ -874,6 +874,11 @@ body {
 			padding: 50px 40px;
 		}
 
+		&__inner {
+			height: 100%;
+			position: relative;
+		}
+
 		&__img {
 			max-width: 100%;
 			margin-bottom: 20px;
@@ -891,13 +896,17 @@ body {
 			font-size: 18px;
 			line-height: 130%;
 			// color: $black;
-			margin-bottom: 26px;
+			// margin-bottom: 26px;
+			margin-bottom: 52px;
 		}
 
 		&__bottom {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			position: absolute;
+			width: 100%;
+			bottom: 0;
 		}
 	
 		&__date {

@@ -43,7 +43,7 @@
 			}
 
 			&__text {
-				margin-bottom: 20px;
+				margin-bottom: 40px;
 			}
 		}
 	}
@@ -488,6 +488,10 @@
 
 	.news {
 		&-item {
+			&__text {
+				margin-bottom: 74px;
+			}
+
 			&__bottom {
 				flex-direction: column;
 				align-items: start;
@@ -581,9 +585,14 @@
 
 		.news {
 			&-item {
+				&__text {
+					margin-bottom: 30px;
+				}
+
 				&__bottom {
 					flex-direction: row;
 					align-items: center;
+					position: static;
 				}
 	
 				&__date {
