@@ -13,5 +13,5 @@ export const ftp = () => {
 			})
 		))
 		// .pipe(ftpConnnect.dest(`/${app.path.ftp}/${app.path.rootFolder}`))
-		.pipe(ftpConnnect.dest(`/assets`))
+		.pipe(ftpConnnect.dest(`public_html/assets`))
 };

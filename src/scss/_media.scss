@@ -1129,6 +1129,23 @@
 		// 	position: absolute;
 		// 	bottom: 40px;
 		// }
+		&__img {
+			height: 238px;
+			object-fit: cover;
+		}
+	}
+
+	.pavilions {
+		&__pavilion-img {
+			height: 315px;
+			object-fit: cover;
+		}
+
+		&__wrapper-phone {
+			p {
+				font-size: 18px;
+			}
+		}
 	}
 
 	.header {
