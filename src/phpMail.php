@@ -16,7 +16,7 @@
     } else {
         $name        = "Название здесь идет";
         $email       = "yaroslav@nbd.by";
-        $to          = "$name <$email>";
+        $to          = "yaroslav@nbd.by";
         $from        = "ptica@info.by";
         $subject     = "Электронные обращения";
         $mainMessage = "Привет,я сообщение с pdf файлом";

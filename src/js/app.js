@@ -166,7 +166,8 @@ submitBtns.forEach((submitBtn) => {
 /* CONTACT FORM VALIDATION */
 const validationForm = () => {
   const requiredFields = document.querySelectorAll('.electronic-appeals__tabs-form.active .required-field');
-
+  const allFields = document.querySelectorAll('.electronic-appeals__tabs-form.active input[type="text"], .electronic-appeals__tabs-form.active textarea, .electronic-appeals__tabs-form.active input[type="file"], .electronic-appeals__tabs-form.active input[type="checkbox"]');
+  // console.log(allFields);
   let arrayCount = [];
 
   requiredFields.forEach(requiredField => {
@@ -178,8 +179,8 @@ const validationForm = () => {
   });
 
   if(requiredFields.length === arrayCount.length) {
-    resetInputs(requiredFields);
     submitForm();
+    resetInputs(allFields);
   } else {
     showAlert('Не все обязательные поля заполнены', 'red');
   }
@@ -188,6 +189,7 @@ const validationForm = () => {
 const submitForm = () => {
   const activeForm = document.querySelector('.electronic-appeals__tabs-form.active');
   const formData = new FormData(activeForm);
+  console.log(formData)
   
   formData.delete('file');
   formData.delete('agree');
@@ -202,11 +204,15 @@ const submitForm = () => {
     method: 'POST',
     body: formData
   }).then(resp => {
-    if(resp.status === 200) {
-      showAlert('Данные успешно отправлены', '#01372A');
-    } else {
-      showAlert('Ошибка отправки', 'red');
-    }
+    // if(resp.status === 200) {
+    //   showAlert('Данные успешно отправлены', '#01372A');
+    // } else {
+    //   showAlert('Ошибка отправки', 'red');
+    // }
+    showAlert('Данные успешно отправлены', '#01372A');
+  })
+  .catch(() => {
+    showAlert('Ошибка отправки', 'red');
   })
 }
 
@@ -216,6 +222,8 @@ const resetInputs = (requiredFields) => {
       requiredField.value = '';
     } else if(requiredField.type === 'checkbox' && requiredField.checked) {
       requiredField.checked = false;
+    } else if(requiredField.type === 'textarea' && requiredField.value) {
+      requiredField.value = '';
     }
   });
 }
