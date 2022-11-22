@@ -204,12 +204,12 @@ const submitForm = () => {
     method: 'POST',
     body: formData
   }).then(resp => {
-    // if(resp.status === 200) {
-    //   showAlert('Данные успешно отправлены', '#01372A');
-    // } else {
-    //   showAlert('Ошибка отправки', 'red');
-    // }
-    showAlert('Данные успешно отправлены', '#01372A');
+    if(resp.status === 200) {
+      showAlert('Данные успешно отправлены', '#01372A');
+    } else {
+      showAlert('Ошибка отправки', 'red');
+    }
+    // showAlert('Данные успешно отправлены', '#01372A');
   })
   .catch(() => {
     showAlert('Ошибка отправки', 'red');
@@ -224,7 +224,9 @@ const resetInputs = (requiredFields) => {
       requiredField.checked = false;
     } else if(requiredField.type === 'textarea' && requiredField.value) {
       requiredField.value = '';
-    }
+    } else if(requiredField.type === 'file' && requiredField.value) {
+			requiredField.nextElementSibling.textContent = 'Файл не выбран';
+		}
   });
 }
 
@@ -241,3 +243,11 @@ const showAlert = (text, backgroundColor) => {
   }, 2000);
 }
 /* CONTACT FORM VALIDATION */
+
+const fileInputs = document.querySelectorAll('.electronic-appeals__tabs-form input[type="file"]');
+
+fileInputs.forEach(fileInput => {
+	fileInput.addEventListener('change', (e) => {
+		fileInput.nextElementSibling.textContent = 'Выбран файл:' + fileInput.files[0].name;
+	});
+});
